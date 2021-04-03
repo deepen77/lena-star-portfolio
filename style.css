@@ -24,17 +24,24 @@ html {
   max-height: 200px;
 }
 
-
 .menu {
   text-align: center;
   margin-left: 300px;
   position: relative;
 }
-.menu .menu-list {
+.menu .menu-list, .menu .menu-list-mobile {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: absolute;
+  right: -100%;
 }
+
+.open {
+    transition: 1s;
+    right: 0;
+}
+
 .menu .menu-item {
   padding: 0 30px 0 20px;
   text-align: center;
@@ -59,6 +66,7 @@ html {
   text-decoration: none;
   cursor: pointer;
   outline: 0;
+  
 }
 .menu .item-link:hover {
   color: #413e3e;
@@ -83,13 +91,83 @@ html {
   z-index: 20;
 }
 
+/*hamburger menu*/
+
+.nav_bar {
+  display: none;  
+  position: fixed;
+  right: 5%;
+  top: 2%;
+}
 
 
+.hamburger .line {
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #4d4e4e;
+  display: block;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+}
 
+.hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger {
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger.is-active {
+  animation: smallbig 0.6s forwards;
+}
+
+@keyframes smallbig {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+}
+
+#hamburger.is-active .line:nth-child(1),
+#hamburger.is-active .line:nth-child(2),
+#hamburger.is-active .line:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+#hamburger.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger.is-active .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger.is-active .line:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
 
 @media only screen and (max-width: 767px) {
-.header {
-    display: none; }
+  .header {
+    display: none;
+  }
+  .nav_bar {
+  display: block;  
+}
+
+
+
+
+
+/* .menu .menu-list {
+  position: absolute;
+  right: -100%;
+} */
   .header-mobile {
     display: block;
     position: fixed;
@@ -97,8 +175,50 @@ html {
     left: 0;
     right: 0;
   }
+
+  .logo {
+    margin: 0;
+  }
+
   .logo .logo-image {
-    max-height: 60px;
+    max-height: 50px;
     display: block;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .menu {
+    margin-left: 0;
+    list-style-type: none;
+  }
+
+  .menu .menu-list {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .open {
+    transition: 1s;
+    right: 0%;
+  }
+
+  .menu .menu-list-mobile.open {
+    transition: 1s;
+    right: 25%;
+  }
+
+  .menu .menu-item:before {
+    content: none;
+  }
+
+  .menu .menu-item {
+    margin: 40px 0 30px 180px;
+  }
+
+  .backgroundImage-lena-mobile {
+    position: absolute;
+    max-height: 75vh;
+    display: block;
+    top: 70px;
   }
 }
