@@ -1,10 +1,11 @@
 const navBar = document.querySelector(".hamburger");
 const navMobileItems = document.querySelector(".menu-list-mobile");
-console.log(navMobileItems)
+const backroundImageMobile = document.querySelector(".backgroundImage-lena-mobile");
 
 navBar.addEventListener("click", () => {
   navBar.classList.toggle("is-active");
   navMobileItems.classList.toggle("open");
+  backroundImageMobile.classList.toggle("open");
 
 });
 
