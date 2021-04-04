@@ -163,7 +163,7 @@ html {
 
 /*Gallery*/
 
-.gallery { 
+/* .gallery { 
   width: 80vw;
   margin: 0 auto;
   padding: .5vw;
@@ -180,6 +180,28 @@ html {
   width: 100%; 
   height: auto;
   transition: all 0.9s; 
+} */
+
+.my-gallery {
+  width: 80vw;
+  margin: 0 auto;
+  padding: .5vw;
+  font-size: 0;
+  flex-flow: row wrap; 
+  display: flex;
+}
+.my-gallery img {
+  width: 100%; 
+  height: auto;
+  transition: all 0.9s; 
+}
+.my-gallery figure {
+  flex: auto; 
+  width: 300px; 
+  margin: .5vw; 
+}
+.my-gallery figcaption {
+  display: none;
 }
 
 /* .gallery div img:hover {

@@ -1,8 +1,3 @@
-var swiper = new Swiper(".swiper-container", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
 
 const navBar = document.querySelector(".hamburger");
 const navMobileItems = document.querySelector(".menu-list-mobile");
@@ -70,3 +65,5 @@ buttonClose.addEventListener("click", closeModal);
 //     navMobileItems.classList.toggle("open");
 //   });
 // }
+
+
