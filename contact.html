@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lena-Star-Porfolio</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header ">
         <div class="container">
@@ -16,9 +21,9 @@
                 <a href='/' class="logo-link image">
                     <img src="./images/lena-star-logo.jpg" alt="MODEL LENA STAROSTKA" class="logo-image" /></a>
             </div>
-            <div class="backgroundImage">
+            <!-- <div class="backgroundImage">
                 <img class="backgroundImage-lena" src="./images/lena-star-background.jpg" alt="">
-            </div>
+            </div> -->
             <nav class="menu">
                 <ul class="unstyled menu-list">
                     <li class="link-item menu-item"><a href="./index.html" class="item-link">Home</a></li>
@@ -26,7 +31,7 @@
                     <li class="link-item menu-item "><a href="./gallery.html" class="item-link">Portfolio</a></li>
                     <li class="link-item menu-item"><a href="./contact.html" class="item-link">Contact</a></li>
                 </ul>
-                <i class="fab fa-instagram"></i>
+                <!-- <i class="fab fa-instagram"></i> -->
             </nav>
 
         </div>
@@ -38,9 +43,9 @@
             <div class="logo"><a href='/' class="logo-link image">
                     <img src="./images/lena-star-logo.jpg" alt="MODEL LENA STAROSTKA" class="logo-image" /></a>
             </div>
-            <div class="backgroundImage-mobile">
+            <!-- <div class="backgroundImage-mobile">
                 <img class="backgroundImage-lena-mobile" src="./images/lena-star-background-mobile.jpg" alt="">
-            </div>
+            </div> -->
         </div>
         <nav class="menu mobile-menu">
             <ul class="unstyled menu-list menu-list-mobile">
@@ -58,8 +63,26 @@
             </div>
         </nav>
     </div>
-  
+    <section class="form-container" id="contact">
+        <form class="contact-form">
+            <h2>CONTACT</h2>
+            
+            <input class="inputName" type="text" id="name" placeholder="Name">
+           
+            
+            <input class="inputEmail" type="email" id="email" placeholder="Email">
+            
+            <input class="inputSubject" type="test" id="subject" placeholder="Subject"></br>
+            <textarea id="message" placeholder="message" cols="30"
+                rows="10"></textarea></br>
+            <input type="submit" class="submit" value="Send Message">
+        </form>
+    </section>
+
     
-<script src="./index.js"></script>    
+    <script src="./index.js"></script>
+   
+
 </body>
+
 </html>
