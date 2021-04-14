@@ -1,9 +1,7 @@
 const navBar = document.querySelector(".hamburger");
 const navMobileItems = document.querySelector(".menu-list-mobile");
 const menuItem = document.querySelectorAll(".menu-item");
-const backroundImageMobile = document.querySelector(
-  ".backgroundImage-lena-mobile"
-);
+const backroundImageMobile = document.querySelector(".backgroundImage-lena-mobile");
 
 
 
