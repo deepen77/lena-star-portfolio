@@ -66,16 +66,21 @@
     <section class="form-container" id="contact">
         <form class="contact-form">
             <h2>CONTACT</h2>
-            
-            <input class="inputName" type="text" id="name" placeholder="Name">
-           
-            
-            <input class="inputEmail" type="email" id="email" placeholder="Email">
-            
-            <input class="inputSubject" type="test" id="subject" placeholder="Subject"></br>
+            <label>
+            <input class="inputName" type="text" autocomplete="off" id="name">
+            <div class="label-text">Full Name</div>
+           </label>
+            <label>
+            <input class="inputEmail" /*type="email"*/ autocomplete="off" id="email" >
+            <div class="label-text">Email</div>
+            </label>
+            <label>
+            <input class="inputSubject" type="test" autocomplete="off" id="subject" >
+                <div class="label-text">Subject</div>
+        </label></br>
             <textarea id="message" placeholder="message" cols="30"
                 rows="10"></textarea></br>
-            <input type="submit" class="submit" value="Send Message">
+            <button type="submit" value="Submit">Send Message</button>
         </form>
     </section>
 
