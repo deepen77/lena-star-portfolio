@@ -107,6 +107,10 @@ html {
   top: 4%;
 }
 
+.mobile-instagram {
+  display: none;
+}
+
 .hamburger .line {
   width: 40px;
   height: 4px;
@@ -183,24 +187,47 @@ html {
   margin-top: 10vw;
 }
 
-.my-gallery {
+/* .my-gallery {
   width: 80vw;
   margin: 0 auto;
   padding: 0.5vw;
   font-size: 0;
   flex-flow: row wrap;
   display: flex;
+} */
+
+.my-gallery {
+  padding:20px 8%;
+  column-count: 4;
+  gap:10px;
 }
-.my-gallery img {
+
+
+
+/* .my-gallery img {
   width: 100%;
   height: auto;
   transition: all 0.9s;
+} */
+
+.my-gallery img {
+  width: 100%;
+  object-fit: cover;
 }
-.my-gallery figure {
+
+
+/* .my-gallery figure {
   flex: auto;
   width: 300px;
   margin: 0.5vw;
+} */
+
+.my-gallery figure {
+  /* padding: 15px; */
+  /* margin-bottom: 10px; */
+  box-shadow: 0 3px 5px rgba(0, 0,0,.3);
 }
+
 .my-gallery figcaption {
   display: none;
 }
@@ -420,6 +447,22 @@ button:hover, button:focus {
   
   width: 100vw;
   
+}
+
+.my-gallery {
+  column-count: 1;
+}
+
+
+
+.mobile-instagram {
+  display: block;
+  position: fixed;
+  top:90%;
+  left: 80%;
+  color: rgb(79, 80, 79);
+  z-index: 999;
+
 }
 
 }
