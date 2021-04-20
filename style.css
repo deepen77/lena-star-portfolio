@@ -103,8 +103,9 @@ html {
 .nav_bar {
   display: none;
   position: fixed;
-  right: 5%;
-  top: 4%;
+  right: 0;
+  top: 0;
+  padding: 20px;
 }
 
 .mobile-instagram {
@@ -345,6 +346,67 @@ button:hover, button:focus {
   color: #333333;
 }
 
+.modal-message-error, .modal-message-success {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgb(255, 255, 255);
+  padding: 50px 70px;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: all 0.3s linear;
+}
+.fa-exclamation-circle, .fa-check-circle {
+  text-align: center;
+  width: 50px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 2;
+  color: red;
+ 
+  
+}
+
+.fa-check-circle {
+  color: rgb(2, 161, 16);
+}
+
+.message-wrong, .message-success {
+  text-align: center;
+  line-height: 2;
+  color: rgb(0, 0, 0);
+  transition: 1s;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.open-modal-message-error, .open-modal-message-success {
+  /* display:block; */
+  visibility: visible;
+  opacity: 1;
+
+  
+}
+
+
+
+.close-modal, .close-modal-success {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgb(255, 255, 255);
+  background: rgb(91, 92, 91);
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+
+
 
 @media only screen and (max-width: 767px) {
   .header {
@@ -364,10 +426,11 @@ button:hover, button:focus {
 
   .logo {
     margin: 0;
+    margin-bottom: 30px;
   }
 
   .logo .logo-image {
-    max-height: 50px;
+    max-height: 40px;
     display: block;
     text-align: center;
     margin: 20px auto auto 20px;
@@ -463,6 +526,10 @@ button:hover, button:focus {
   color: rgb(79, 80, 79);
   z-index: 999;
 
+}
+
+textarea {
+   width: 80%;
 }
 
 }

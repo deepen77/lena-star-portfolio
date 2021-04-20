@@ -10,7 +10,11 @@ let email = document.getElementById("email");
 let subject = document.getElementById("subject");
 let message = document.getElementById("message");
 
+const modalMessageError = document.querySelector(".modal-message-error");
+const closeModalError = document.querySelector(".close-modal");
 
+const modalMessageSuccess = document.querySelector(".modal-message-success");
+const closeModalSuccess = document.querySelector(".close-modal-success");
 
 
 
@@ -50,15 +54,25 @@ contactForm.addEventListener("submit", (e) => {
   xhr.onload = function () {
     console.log(xhr.responseText);
     if (xhr.responseText == "success") {
-      alert("Email sent");
+      // alert("Email sent");
+      modalMessageSuccess.classList.toggle("open-modal-message-success");
       name.value = "";
       email.value = "";
       subject.value = "";
       message.value = "";
     } else {
-      alert("Something went wrong!");
+      // alert("Something went wrong!");
+      modalMessageError.classList.toggle("open-modal-message-error");
     }
   };
 
   xhr.send(JSON.stringify(formData));
+});
+
+closeModalError.addEventListener('click', () => {
+  modalMessageError.classList.toggle("open-modal-message-error");
+})
+
+closeModalSuccess.addEventListener("click", () => {
+  modalMessageSuccess.classList.toggle("open-modal-message-success");
 });
