@@ -63,23 +63,23 @@
             </div>
         </nav>
     </div>
-    <section class="form-container" id="contact">
-        <form class="contact-form">
+    <section class="form-container" id="contact" >
+        <form  target="blank" class="contact-form" action="https://formsubmit.co/seamus.deepen@gmail.com" method="POST">
             <h2>CONTACT</h2>
             <label>
-            <input class="inputName" type="text" autocomplete="off" id="name">
+            <input class="inputName" type="text" name="name" autocomplete="off" id="name" required>
             <div class="label-text">Full Name</div>
            </label>
             <label>
-            <input class="inputEmail" /*type="email"*/ autocomplete="off" id="email" >
+            <input class="inputEmail" type="email" name="email" autocomplete="off" id="email" required>
             <div class="label-text">Email</div>
             </label>
             <label>
-            <input class="inputSubject" type="test" autocomplete="off" id="subject" >
+            <input class="inputSubject" type="subject" name="subject" autocomplete="off" id="subject" required >
                 <div class="label-text">Subject</div>
         </label></br>
-            <textarea id="message" placeholder="message" cols="30"
-                rows="10"></textarea></br>
+            <textarea id="message" placeholder="message" name="message" cols="30"
+                rows="10" required></textarea></br>
             <button type="submit" value="Submit">Send Message</button>
         </form>
     </section>

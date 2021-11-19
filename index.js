@@ -3,7 +3,7 @@ const navMobileItems = document.querySelector(".menu-list-mobile");
 const menuItem = document.querySelectorAll(".menu-item");
 const backroundImageMobile = document.querySelector(".backgroundImage-lena-mobile");
 
-
+/*
 const contactForm = document.querySelector(".contact-form");
 let name = document.getElementById("name");
 let email = document.getElementById("email");
@@ -15,7 +15,7 @@ const closeModalError = document.querySelector(".close-modal");
 
 const modalMessageSuccess = document.querySelector(".modal-message-success");
 const closeModalSuccess = document.querySelector(".close-modal-success");
-
+*/
 
 
 navBar.addEventListener("click", () => {
@@ -37,7 +37,7 @@ function navSettings() {
 
 navSettings();
 
-
+/*
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -68,7 +68,9 @@ contactForm.addEventListener("submit", (e) => {
 
   xhr.send(JSON.stringify(formData));
 });
+*/
 
+/*
 closeModalError.addEventListener('click', () => {
   modalMessageError.classList.toggle("open-modal-message-error");
 })
@@ -76,3 +78,5 @@ closeModalError.addEventListener('click', () => {
 closeModalSuccess.addEventListener("click", () => {
   modalMessageSuccess.classList.toggle("open-modal-message-success");
 });
+
+*/
