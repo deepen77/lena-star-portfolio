@@ -162,6 +162,30 @@ html {
   transform: translateY(-12px) rotate(-45deg);
 }
 
+.about {
+  position: relative;
+  top: 100px;
+}
+
+.about-section {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+  height : 50vh;
+  align-items: flex-start;
+}
+
+.about-section img, .about-section .about-me {
+  padding: 10px;
+}
+.about-me {
+  text-align:justify;
+
+}
+
+
+
 /*Gallery*/
 
 /* .gallery {
@@ -184,7 +208,8 @@ html {
 } */
 
 .gallery {
-  margin-top: 10vw;
+  position: relative;
+  top: 100px;
 }
 
 /* .my-gallery {
@@ -260,12 +285,12 @@ html {
   margin-bottom: 300px;
 }
 
-.contact-form h2 {
+.contact-form h2, .about h2, .gallery h2 {
   margin-bottom: 50px;
   color: #6e6d6d;
 }
 
-.contact-form {
+.contact-form, .about h2, .gallery h2{
   text-align: center;
   padding: 30px;
 }
@@ -372,6 +397,19 @@ button:hover, button:focus {
 
 .fa-check-circle {
   color: rgb(2, 161, 16);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+ background: rgb(240, 240, 240);
+}
+
+.footer p {
+  text-align: center;
+  padding: 5px;
 }
 
 .message-wrong, .message-success {
@@ -489,8 +527,24 @@ button:hover, button:focus {
     transition: 1s;
   }
 
-  .gallery {
-    margin-top: 20vw;
+  .about-section {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  height : auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+ .about-section img {
+  width: 100%;
+}
+.about-section .about-me {
+  padding: 30px;
+}
+
+  .gallery, .about, .form-container {
+    margin-top: 10vw;
   }
 
   .fa-window-close {
