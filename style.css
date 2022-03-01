@@ -174,6 +174,7 @@ html {
   justify-content: space-around;
   height : 50vh;
   align-items: flex-start;
+  margin-bottom: 550px;
 }
 
 .about-section img, .about-section .about-me {
@@ -181,45 +182,30 @@ html {
 }
 .about-me {
   text-align:justify;
-
+  line-height: 40px;
 }
 
+
+.about-me-contact {
+  color: #919191;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    background-color: #f3f2f2;
+    padding: 5px;
+    border-radius: 3px;
+}
 
 
 /*Gallery*/
 
-/* .gallery {
-  width: 80vw;
-  margin: 0 auto;
-  padding: .5vw;
-  font-size: 0;
-  flex-flow: row wrap;
-  display: flex;
-}
-.gallery div {
-  flex: auto;
-  width: 300px;
-  margin: .5vw;
-}
-.gallery div img {
-  width: 100%;
-  height: auto;
-  transition: all 0.9s;
-} */
-
 .gallery {
   position: relative;
   top: 100px;
+  margin-bottom: 350px;
 }
-
-/* .my-gallery {
-  width: 80vw;
-  margin: 0 auto;
-  padding: 0.5vw;
-  font-size: 0;
-  flex-flow: row wrap;
-  display: flex;
-} */
 
 .my-gallery {
   padding:20px 8%;
@@ -227,39 +213,18 @@ html {
   gap:10px;
 }
 
-
-
-/* .my-gallery img {
-  width: 100%;
-  height: auto;
-  transition: all 0.9s;
-} */
-
 .my-gallery img {
   width: 100%;
   object-fit: cover;
 }
 
-
-/* .my-gallery figure {
-  flex: auto;
-  width: 300px;
-  margin: 0.5vw;
-} */
-
 .my-gallery figure {
-  /* padding: 15px; */
-  /* margin-bottom: 10px; */
   box-shadow: 0 3px 5px rgba(0, 0,0,.3);
 }
 
 .my-gallery figcaption {
   display: none;
 }
-
-/* .gallery div img:hover {
-    transform: scale(1.01)
-  } */
 
 .fa-window-close {
   position: fixed;
@@ -280,7 +245,6 @@ html {
   top: 100px;
   width: 800px;
   height: 20rem;
-  /* background: linear-gradient(to right, rgb(2, 24, 41), black); */
   margin: 0 auto;
   margin-bottom: 300px;
 }
@@ -441,7 +405,6 @@ button:hover, button:focus {
   padding: 2px 5px;
   border-radius: 3px;
 }
-
 
 
 
