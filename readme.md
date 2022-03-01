@@ -63,7 +63,7 @@ gh repo clone deepen77/lena-star-portfolio
 
 ## Usage
 To run this projecton your local machine, open file index.html in any IDE.
-Images are not available in source code!
+
 
 
 ## Project Status
